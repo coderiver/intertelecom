@@ -1,0 +1,87 @@
+.wrapper_shops
+	position: relative
+	z-index: 2
+.footer
+	padding: 80px 0 20px
+	min-height: 400px
+	position: relative
+	background: #fff url(../img/footer-bg.png) 0 100% repeat-x
+	&:before
+		content: ""
+		position: absolute
+		top: -108px
+		left: 50%
+		margin-left: -560px
+		width: 1120px
+		height: 201px
+		background: url(../img/snow.png) 0 0 no-repeat
+	.soc-share
+		margin: 47px 0 44px 
+		
+.dotted-box_form
+	margin-top: 18px
+	padding: 28px 15px 15px 28px
+	.form
+		margin-bottom: 25px
+		padding: 0
+		text-align: left
+	.input_name
+		width: 336px
+	.input_phone
+		width: 116px
+	.btn
+		width: 330px
+	p
+		strong
+			font-weight: 500 
+
+.input_blue
+	border-color: #066ab7
+	
+.soc-share
+	text-align: center
+.soc-share__main
+	display: inline-block
+	
+.video
+	position: relative
+	margin: 0 auto 
+	width: 700px
+	height: 391px
+	overflow: hidden
+	border: 5px solid #c6d8e7
+	border-radius: 5px
+.video__play
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -55px 0 0 -55px
+	+s(play)
+
+.footer__cont
+	position: relative
+	display: block
+	width: 445px
+	margin: 158px auto 0
+	+box 
+	padding-left: 60px
+	font-size: 14px
+	color: #578db7 
+	&:before
+		content: ""
+		position: absolute
+		left: 0
+		top: 13px
+		+s(phone) 
+
+.footer__phone
+	margin-bottom: -2px
+	color: #066ab7
+	sup
+		position: relative
+		top: 5px
+		font-size: 24px
+		vertical-align: top
+	span
+		font-weight: 500
+		font-size: 48px 
