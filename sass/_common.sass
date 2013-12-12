@@ -41,11 +41,11 @@ table
 	border-collapse: collapse
 
 // common styles
-.page
-	min-height: 100%
-	height: auto !important
-	height: 100%
-	margin: 0 auto -205px
+// .page
+// 	min-height: 100%
+// 	height: auto !important
+// 	height: 100%
+// 	margin: 0 auto -205px
 .h1
 	font-weight: bold
 	font-size: 36px 
@@ -63,9 +63,11 @@ table
 .h3_blue	 	
 	font-weight: normal
 	color: #066ab7
-.push
-	height: 205px
-	clear: both
+.h3_white
+	color: #fff	
+// .push
+// 	height: 205px
+// 	clear: both
 
 // header
 .header
@@ -80,7 +82,7 @@ table
 	padding: 29px 0 0 
 .header__topper
 	+clr
-	margin-bottom: 64px 
+	margin-bottom: 40px 
 	.h1
 		float: left
 .lang
@@ -114,25 +116,23 @@ table
 .header__img
 	position: absolute
 	top: -100px
-	left: -92px
+	left: -77px
 .header__right
 	position: relative
 	float: right
-	width: 562px
+	width: 50%
 	margin-bottom: 25px  	
 	z-index: 2
 .header__text
-	padding: 28px 20px 0
+	padding: 28px 0px 0
 	font-weight: 300
 	color: #fff
 	font-size: 18px
-	p
-		margin-bottom: 10px
 .terms
-	position: relative
+	position: absolute
+	bottom: 120px
+	left: 0px
 	z-index: 2
-	margin-bottom: 60px 
-	padding-left: 40px 
 	color: #aed1fa
 	font-size: 14px 
 	clear: both
@@ -206,21 +206,44 @@ table
 			top: 0px
 			left: 0px
 			+s(list)
+		a
+			display: inline-block
+			color: #ffe600
+			border-bottom: 1px dotted
+			&:hover
+				text-decoration: none
+				
 .speed-3g
 	padding-top: 80px
-	min-height: 300px
+	min-height: 400px
 	background: url(../img/speed-3g.png) 100% 127px no-repeat
 .coverage
 	padding: 80px 0 60px  
 	min-height: 300px
 	background: url(../img/map.png) 0px 70px no-repeat
 .activate
-	padding: 80px 0 0 		 
+	padding: 80px 0 0 
+.activate-step1, .activate-step2
+	position: relative
+	padding: 20px 0 0 85px
+	margin-bottom: 34px
+	margin-top: 17px
+	span
+		font-size: 18px 
+	&:before
+		content: ""
+		position: absolute
+		top: 0px
+		left: -11px
+		+s(step1)
+.activate-step2
+	&:before
+		+s(step2)
 .dotted-box
 	+border-radius(10px)
 	border: 2px dashed #d2e5f3
 	text-align: center
-	padding: 0 15px 20px 
+	padding: 20px 15px 20px 
 .dotted-box__title
 	position: relative
 	top: -12px
@@ -232,13 +255,22 @@ table
 	text-transform: uppercase
 .price
 	+clr
+	margin-top: 17px 
 .price__col
 	float: left
 	width: 50%
+	+clr
 .price__text
-	text-align: center
+	float: left
+	width: 60%
+	padding-top: 10px  
+	text-align: right
+	font-size: 18px 
 	font-weight: 300 
 .price-val
+	float: right
+	width: 37%
+	text-align: left 
 	font-size: 14px
 	color: #066ab7
 	span
@@ -269,4 +301,48 @@ table
 		border-left: 1px solid #297fc1
 		&:first-child
 			border-left: none
-			+box-shadow(none)   
+			+box-shadow(none)
+.info
+	position: relative
+	padding: 33px 33px 33px 63px
+	font-size: 16px
+	font-weight: 300
+	color: #7e7e7e  
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 20px
+		margin-top: -15px 
+		+s(info)
+
+// shop
+.wrapper_shops		
+	background: url(../img/shop-bg.jpg) 0 0 no-repeat
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+.shops
+	padding: 70px 0 90px
+	+clr
+	color: #fff
+	background: url(../img/shop.png) -69px -36px no-repeat  	
+.shops__sub-title
+	margin: 10px 0 25px
+	font-weight: 500
+	color: #d7eaf8
+	font-size: 21px    	
+.shop-label 
+	clear: both
+	font-size: 0
+	text-align: center 
+	height: 66px
+	line-height: 66px  
+	border: 2px solid #5469b9
+	+border-radius(35px)
+	background: rgba(0,0,0,.1)
+	img
+		margin: 0 7px
+		vertical-align: middle 
+
+	
