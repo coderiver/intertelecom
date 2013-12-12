@@ -20,8 +20,8 @@ button::-moz-focus-inner { padding: 0; border: 0; }
 
 table { border-spacing: 0; border-collapse: collapse; }
 
-.h1 { font-weight: bold; font-size: 36px; color: #ffe600; }
-.h1 span { display: block; text-align: center; font-size: 30px; text-transform: lowercase; }
+.h1 { font-weight: bold; font-size: 30px; color: #ffe600; }
+.h1 span { display: block; text-align: center; text-transform: lowercase; }
 
 .h2 { font-weight: bold; font-size: 30px; color: white; }
 
@@ -62,7 +62,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .header__text { padding: 28px 0px 0; font-weight: 300; color: white; font-size: 18px; }
 
-.terms { position: absolute; bottom: 120px; left: 0px; z-index: 2; color: #aed1fa; font-size: 14px; clear: both; }
+.terms { position: absolute; bottom: 88px; left: 0px; z-index: 2; color: #aed1fa; font-size: 14px; clear: both; }
 
 .form { position: relative; font-size: 0; padding: 0 30px; z-index: 2; }
 .form input { margin-left: 20px; vertical-align: top; }
@@ -254,7 +254,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .video__play { position: absolute; top: 50%; left: 50%; margin: -55px 0 0 -55px; background: url('../img/icons-sb115184b73.png') 0 -196px no-repeat; width: 110px; height: 110px; }
 
-.footer__cont { position: relative; display: block; width: 445px; margin: 158px auto 0; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 60px; font-size: 14px; color: #578db7; }
+.footer__cont { position: relative; display: block; width: 450px; margin: 158px auto 0; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 60px; font-size: 14px; color: #578db7; }
 .footer__cont:before { content: ""; position: absolute; left: 0; top: 13px; background: url('../img/icons-sb115184b73.png') 0 -507px no-repeat; width: 42px; height: 53px; }
 
 .footer__phone { margin-bottom: -2px; color: #066ab7; }
