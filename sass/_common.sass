@@ -41,11 +41,6 @@ table
 	border-collapse: collapse
 
 // common styles
-// .page
-// 	min-height: 100%
-// 	height: auto !important
-// 	height: 100%
-// 	margin: 0 auto -205px
 .h1
 	font-weight: bold
 	font-size: 36px 
@@ -64,10 +59,7 @@ table
 	font-weight: normal
 	color: #066ab7
 .h3_white
-	color: #fff	
-// .push
-// 	height: 205px
-// 	clear: both
+	color: #fff
 
 // header
 .header
@@ -279,29 +271,94 @@ table
 		
 // tarif
 .tarif-wrap
-	clear: both
-	padding-top: 20px 
-	text-align: center
+	+clr
+	margin-bottom: 30px 
+.tarif__col
+	float: left
+	width: 460px
 	.h3
-		display: inline-block
-		margin-bottom: 7px 			 	
+		margin-bottom: 8px 
+.tarif__col_right
+	float: right	 		 			 	
 .tarif
+	position: relative
 	border: 1px solid #0569b7
 	+border-radius(5px)
 .tarif__head
 	+clr
 	background: #0569b7
+	color: #fff
+	font-weight: 500 
 	+background(linear-gradient(top, #0569b7 0%, #05528e 100%))
 	li
+		position: relative
 		float: left
-		width: 25%
+		width: 50%
 		height: 60px
+		padding: 18px 18px 0 60px 
 		+box
 		+box-shadow(-1px 0 1px #065592)
-		border-left: 1px solid #297fc1
+		border-left: 1px solid #297fc0
 		&:first-child
 			border-left: none
 			+box-shadow(none)
+	li.free-access
+		&:before
+			content: ""
+			position: absolute
+			top: 9px
+			left: 9px
+			+s(free-access)
+	li.free-access-3g
+		&:before
+			content: ""
+			position: absolute
+			top: 9px
+			left: 9px
+			+s(free-access-3g)
+.tarif__body
+	+clr 
+	.tarif__body-col
+		position: relative
+		float: left
+		width: 50%
+		min-height: 213px
+		+box 
+		padding: 18px 0 36px 18px
+		border-left: 1px solid #deebf6
+		&:first-child
+			border-left: none
+.list-small
+	margin-bottom: 15px 
+	li
+		position: relative
+		padding-left: 10px
+		font-weight: 300
+		font-size: 15px
+		margin-bottom: 10px   
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			left: 0px
+			+s(list-small)
+		span
+			font-weight: bold
+			color: #066ab7
+			font-size: 20px	
+			vertical-align: top
+.tarif__link
+	position: absolute
+	bottom: 20px
+	left: 20px
+	font-size: 13px
+	display: inline-block
+	font-weight: 300
+	border-bottom: 1px dotted  
+	&:hover
+		text-decoration: none
+		color: #066ab7
+			 								
 .info
 	position: relative
 	padding: 33px 33px 33px 63px
