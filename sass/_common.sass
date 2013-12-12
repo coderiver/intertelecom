@@ -246,10 +246,27 @@ table
 		font-size: 50px
 		
 // tarif
-.tarif
+.tarif-wrap
 	clear: both
 	padding-top: 20px 
 	text-align: center
 	.h3
-		display: inline-block			 	
-
+		display: inline-block
+		margin-bottom: 7px 			 	
+.tarif
+	border: 1px solid #0569b7
+	+border-radius(5px)
+.tarif__head
+	+clr
+	background: #0569b7
+	+background(linear-gradient(top, #0569b7 0%, #05528e 100%))
+	li
+		float: left
+		width: 25%
+		height: 60px
+		+box
+		+box-shadow(-1px 0 1px #065592)
+		border-left: 1px solid #297fc1
+		&:first-child
+			border-left: none
+			+box-shadow(none)   

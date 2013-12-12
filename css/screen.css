@@ -119,5 +119,13 @@ table { border-spacing: 0; border-collapse: collapse; }
 .price__val { font-size: 14px; color: #066ab7; }
 .price__val span { font-weight: bold; font-size: 50px; }
 
-.tarif { clear: both; padding-top: 20px; text-align: center; }
-.tarif .h3 { display: inline-block; }
+.tarif-wrap { clear: both; padding-top: 20px; text-align: center; }
+.tarif-wrap .h3 { display: inline-block; margin-bottom: 7px; }
+
+.tarif { border: 1px solid #0569b7; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; }
+
+.tarif__head { *zoom: 1; background: #0569b7; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0569b7), color-stop(100%, #05528e)); background: -webkit-linear-gradient(top, #0569b7 0%, #05528e 100%); background: -moz-linear-gradient(top, #0569b7 0%, #05528e 100%); background: -o-linear-gradient(top, #0569b7 0%, #05528e 100%); background: linear-gradient(top, #0569b7 0%, #05528e 100%); }
+.tarif__head:before, .tarif__head:after { content: ""; display: table; }
+.tarif__head:after { clear: both; }
+.tarif__head li { float: left; width: 25%; height: 60px; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: -1px 0 1px #065592; -moz-box-shadow: -1px 0 1px #065592; box-shadow: -1px 0 1px #065592; border-left: 1px solid #297fc1; }
+.tarif__head li:first-child { border-left: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
