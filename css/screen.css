@@ -212,7 +212,7 @@ table { border-spacing: 0; border-collapse: collapse; }
 
 .table_tariff { margin-bottom: 23px; }
 .table_tariff strong { display: block; font-weight: 500; font-size: 16px; }
-.table_tariff span { font-size: 12px; }
+.table_tariff span { display: block; font-size: 12px; }
 
 .price-val_small { float: none; width: auto; text-align: center; }
 .price-val_small span { font-size: 24px; }
