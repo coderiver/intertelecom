@@ -67,7 +67,7 @@ table
 
 // header
 .header
-	height: 580px
+	height: 550px
 	background: url(../img/header-bg.jpg) 0 0 no-repeat
 	-webkit-background-size: cover 
 	-o-background-size: cover 
@@ -78,7 +78,7 @@ table
 	padding: 29px 0 0 
 .header__topper
 	+clr
-	margin-bottom: 40px 
+	margin-bottom: 30px 
 	.h1
 		float: left
 .lang
@@ -116,17 +116,16 @@ table
 .header__right
 	position: relative
 	float: right
-	width: 50%
-	margin-bottom: 25px  	
+	width: 50%  	
 	z-index: 2
 .header__text
-	padding: 28px 0px 0
+	padding: 18px 0px 0
 	font-weight: 300
 	color: #fff
 	font-size: 18px
 .terms
 	position: absolute
-	bottom: 88px
+	top: 270px
 	left: 0px
 	z-index: 2
 	color: #aed1fa
@@ -299,10 +298,9 @@ table
 	li
 		position: relative
 		float: left
-		width: 50%
-		height: 60px
+		width: 150px
+		height: 42px
 		padding: 18px 18px 0 60px 
-		+box
 		+box-shadow(-1px 0 1px #065592)
 		border-left: 1px solid #297fc0
 		&:first-child
@@ -327,9 +325,8 @@ table
 	.tarif__body-col
 		position: relative
 		float: left
-		width: 50%
-		min-height: 213px
-		+box 
+		width: 210px
+		min-height: 177px
 		padding: 18px 0 36px 18px
 		border-left: 1px solid #deebf6
 		&:first-child
@@ -395,17 +392,31 @@ table
 	font-weight: 500
 	color: #d7eaf8
 	font-size: 21px    	
-.shop-label 
-	clear: both
-	font-size: 0
-	text-align: center 
+.shop-label
+	position: relative
+	padding: 0 15px  
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	clear: both 
 	height: 66px
 	line-height: 66px  
 	border: 2px solid #5469b9
 	+border-radius(35px)
 	background: rgba(0,0,0,.1)
+	&:after
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+		content: ''
+		display: inline-block
 	img
-		margin: 0 7px
+		display: inline-block
+		line-height: normal
 		vertical-align: middle 
 
 	
