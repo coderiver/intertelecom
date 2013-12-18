@@ -65,12 +65,13 @@ table
 	color: #fff
 
 // header
+//	height: 550px
 .header
-	height: 550px
-	background: url(../img/header-bg.jpg) 0 0 no-repeat
+	background: #153274 url(../img/header-bg.jpg) 0 0 no-repeat
 	-webkit-background-size: cover 
 	-o-background-size: cover 
 	background-size: cover
+	
 .header__inner
 	width: 940px
 	margin: 0 auto   
@@ -124,16 +125,18 @@ table
 	font-size: 18px
 .terms
 	position: absolute
-	top: 270px
+	top: 280px
 	left: 0px
 	z-index: 2
 	color: #aed1fa
 	font-size: 14px 
 	clear: both
+	width: 400px 
+	text-align: center
 .form
 	position: relative
 	font-size: 0
-	padding: 0 30px  
+	padding: 25px 30px  
 	z-index: 2
 	input
 		margin-left: 20px
@@ -150,21 +153,31 @@ table
 	font-family: 'Ubuntu', sans-serif
 	color: #000
 	+placeholder(#999)
+	vertical-align: middle
+	color: #A1A1A1
+	&:focus
+		color: #000 
 .input_name
 	width: 356px
 .input_phone 
 	width: 226px
+	margin-right: 18px 
+	&.input_blue
+		margin-right: 0 
 .btn
 	width: 190px 
 	height: 38px
 	border: 1px solid #ffc500
+	color: #21358b
+	@include text-shadow(0 1px 0 rgba(255,255,255,.5))
 	+border-radius(5px)
 	background: #ffde00
 	+background(linear-gradient(top, #ffe900 0%, #ffc500 100%))
 	+box-shadow(0 1px 3px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.72))
-	font: 500 18px 'Ubuntu', sans-serif
+	font: 300 18px 'Ubuntu', sans-serif
 	color: #21368b
 	cursor: pointer	
+	vertical-align: middle
 .wrapper_snow
 	background: url(../img/snow.png) 50% -133px no-repeat
 .wrapper_gray
@@ -311,20 +324,34 @@ table
 		&:first-child
 			border-left: none
 			+box-shadow(none)
-	li.free-access
-		&:before
-			content: ""
+	// li.free-access
+	// 	&:before
+	// 		content: ""
+	// 		position: absolute
+	// 		top: 9px
+	// 		left: 9px
+	// 		+s(free-access)
+	// li.free-access-3g
+	// 	&:before
+	// 		content: ""
+	// 		position: absolute
+	// 		top: 9px
+	// 		left: 9px
+	// 		+s(free-access-3g)
+	li
+		i
 			position: absolute
 			top: 9px
 			left: 9px
+			z-index: 10 
+		.icont1
 			+s(free-access)
-	li.free-access-3g
-		&:before
-			content: ""
-			position: absolute
-			top: 9px
-			left: 9px
+		.icont2
 			+s(free-access-3g)
+		.icont3
+			+s(icont3)
+		.icont4
+			+s(icont4)
 .tarif__body
 	+clr 
 	.tarif__body-col
