@@ -149,10 +149,16 @@ table { border-spacing: 0; border-collapse: collapse; }
 .tarif__head li { position: relative; float: left; width: 150px; height: 42px; padding: 18px 18px 0 60px; -webkit-box-shadow: -1px 0 1px #065592; -moz-box-shadow: -1px 0 1px #065592; box-shadow: -1px 0 1px #065592; border-left: 1px solid #297fc0; }
 .tarif__head li:first-child { border-left: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 .tarif__head li i { position: absolute; top: 9px; left: 9px; z-index: 10; }
-.tarif__head li .icont1 { background: url('../img/icons-s7b00c47936.png') 0 -668px no-repeat; width: 42px; height: 42px; }
-.tarif__head li .icont2 { background: url('../img/icons-s7b00c47936.png') 0 -564px no-repeat; width: 42px; height: 42px; }
-.tarif__head li .icont3 { background: url('../img/icons-s7b00c47936.png') 0 -512px no-repeat; width: 42px; height: 42px; }
-.tarif__head li .icont4 { background: url('../img/icons-s7b00c47936.png') 0 -616px no-repeat; width: 42px; height: 42px; }
+
+.icont1, .icont2, .icont3, .icont1 { display: inline-block; }
+
+.icont1 { background: url('../img/icons-s7b00c47936.png') 0 -668px no-repeat; width: 42px; height: 42px; }
+
+.icont2 { background: url('../img/icons-s7b00c47936.png') 0 -564px no-repeat; width: 42px; height: 42px; }
+
+.icont3 { background: url('../img/icons-s7b00c47936.png') 0 -512px no-repeat; width: 42px; height: 42px; }
+
+.icont4 { background: url('../img/icons-s7b00c47936.png') 0 -616px no-repeat; width: 42px; height: 42px; }
 
 .tarif__body { *zoom: 1; }
 .tarif__body:before, .tarif__body:after { content: ""; display: table; }
