@@ -48,7 +48,6 @@ table
 	span
 		display: block
 		text-align: center
-		text-transform: lowercase
 .h2
 	font-weight: bold
 	font-size: 30px
@@ -190,9 +189,11 @@ table
 		margin-top: 15px  	
 .list
 	padding: 28px 0 0 14px
+	padding-top: 24px 
 	li
 		position: relative
 		margin-bottom: 15px
+		margin-bottom: 11px 
 		padding-left: 30px
 		font-size: 18px 
 		&:before
@@ -233,9 +234,13 @@ table
 		top: 0px
 		left: -11px
 		+s(step1)
+		.ua &
+			+s(step1ua)
 .activate-step2
 	&:before
 		+s(step2)
+		.ua &
+			+s(step2ua)
 .dotted-box
 	+border-radius(10px)
 	border: 2px dashed #d2e5f3
