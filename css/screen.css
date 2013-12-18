@@ -74,6 +74,9 @@ table { border-spacing: 0; border-collapse: collapse; }
 .input::-webkit-input-placeholder { color: #999999; }
 .input:focus { color: black; }
 
+.validated input:valid { border-color: 2px solid #2c324a; }
+.validated input:invalid { border-color: #cc0000; -webkit-box-shadow: 0 0 5px rgba(204, 0, 0, 0.4); -moz-box-shadow: 0 0 5px rgba(204, 0, 0, 0.4); box-shadow: 0 0 5px rgba(204, 0, 0, 0.4); }
+
 .input_name { width: 356px; }
 
 .input_phone { width: 226px; margin-right: 18px; }
